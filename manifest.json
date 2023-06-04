@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Zetflix changer",
+  "description": "Автоматически включает вкладку для сегодняшнего дня",
+  "action": {},
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [ "activeTab", "tabs" ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+
+}
