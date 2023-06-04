@@ -35,8 +35,8 @@ chrome.tabs.onActivated.addListener((tab) => {
 
         let oldTabId = currentTab.id;
         setTimeout(() => {
-          // chrome.tabs.remove(Number(oldTabId))
-          // chrome.tabs.create({ url: newUrl, active: true, index: currentTab.index }, () => { })
+          chrome.tabs.remove(Number(oldTabId))
+          chrome.tabs.create({ url: newUrl, active: true, index: currentTab.index }, () => { })
         }, 200)
 
       }
